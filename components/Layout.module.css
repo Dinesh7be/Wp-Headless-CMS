@@ -1,0 +1,20 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the layout takes full viewport height */
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  position: sticky; /* Keeps header at top during scroll */
+  top: 0; /* Positions header at the top */
+  z-index: 1000; /* Ensures header stays above other content */
+}
+
+.mainContent {
+  flex: 1; /* Allows the main content to take the remaining space */
+  padding: 1rem;
+}
